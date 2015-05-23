@@ -1,0 +1,23 @@
+{
+  "name": "horizontal-divider",
+  "keywords": [
+    "seed",
+    "polymer",
+    "web-components"
+  ],
+  "main": "horizontal-divider.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.6"
+  },
+  "homepage": "https://github.com/basicelements/horizontal-divider",
+  "_release": "bebfddb71b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "bebfddb71b8785f805227f4d3049ce55e64de2e2"
+  },
+  "_source": "git://github.com/basicelements/horizontal-divider.git",
+  "_target": "*",
+  "_originalSource": "basicelements/horizontal-divider",
+  "_direct": true
+}
