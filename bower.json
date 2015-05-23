@@ -1,0 +1,13 @@
+{
+  "name": "horizontal-divider",
+  "version": "0.0.0",
+  "keywords": [
+    "seed",
+    "polymer",
+    "web-components"
+  ],
+  "main": "horizontal-divider.html",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^0.5.6"
+  }
+}
