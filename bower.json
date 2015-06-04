@@ -1,13 +1,27 @@
 {
   "name": "horizontal-divider",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "authors": [
+    "Glenn Vandeuren <VandeurenGlenn@gmail.com>"
+  ],
+  "description": "An horizontal divider.",
   "keywords": [
-    "seed",
+    "web-component",
+    "web-components",
     "polymer",
-    "web-components"
+    "seed"
   ],
   "main": "horizontal-divider.html",
+  "homepage": "https://github.com/BasicElements/horizontal-divider/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^0.5.6"
+    "polymer": "Polymer/polymer#^1.0.0"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"
   }
 }
