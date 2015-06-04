@@ -1,25 +1,45 @@
 <link rel="import" href="../polymer/polymer.html">
 
 <!--
-Element providing solution to no problem in particular.
+An horizontal divider.
 
 ##### Example
 
     <horizontal-divider></horizontal-divider>
 
-@element horizontal-divider
-@blurb Element providing solution to no problem in particular.
-@status alpha
-@homepage http://BasicElements.github.io/horizontal-divider
+@demo
 -->
-<polymer-element name="horizontal-divider">
-  <template>
-    <link rel="stylesheet" href="horizontal-divider.css">
-    <hr>
-  </template>
-  <script>
-    Polymer({
+<dom-module id='horizontal-divider'>
+  <style>
+    :host {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      margin: 8px auto;
+    }
+    hr {
+      display: block;
+      position: relative;
+      padding: 0;
+      height: 0;
+      max-height: 0;
+      font-size: 1px;
+      line-height: 0;
+      clear: both;
+      border: none;
+      border-bottom: 1px solid #888;
+    }
+  </style>
+</dom-module>
 
-    });
-  </script>
-</polymer-element>
+<script>
+  Polymer({
+    is: 'horizontal-divider',
+
+    ready: function () {
+      this._hr = document.createElement('hr');
+      Polymer.dom(this.root).appendChild(this._hr);
+    }
+
+  });
+</script>
