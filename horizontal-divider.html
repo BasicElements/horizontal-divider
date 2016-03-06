@@ -30,16 +30,16 @@ An horizontal divider.
       @apply(--horizontal-divider);
     }
   </style>
+
+  <script>
+    Polymer({
+      is: 'horizontal-divider',
+    
+      ready: function () {
+        this._hr = document.createElement('hr');
+        Polymer.dom(this.root).appendChild(this._hr);
+      }
+    
+    });
+    </script>
 </dom-module>
-
-<script>
-  Polymer({
-    is: 'horizontal-divider',
-
-    ready: function () {
-      this._hr = document.createElement('hr');
-      Polymer.dom(this.root).appendChild(this._hr);
-    }
-
-  });
-</script>
