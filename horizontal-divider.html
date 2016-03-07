@@ -7,6 +7,14 @@ An horizontal divider.
 
     <horizontal-divider></horizontal-divider>
 
+### Styling
+The following custom properties and mixins are available for styling:
+Custom property | Description | Default
+----------------|-------------|----------
+`--horizontal-divider-opacity` | The opacity value of the divider | `0.12`
+`--horizontal-divider-color` | The color of the divider | `#000`
+`--horizontal-divider-line-height` | The line-height of the divider | `0`
+
 @demo
 -->
 <dom-module id='horizontal-divider'>
@@ -15,6 +23,7 @@ An horizontal divider.
       display: inline-block;
       position: relative;
       width: 100%;
+      margin: 8px auto;
     }
     hr {
       display: block;
@@ -23,23 +32,24 @@ An horizontal divider.
       height: 0;
       max-height: 0;
       font-size: 1px;
-      line-height: 0;
+      line-height: var(--horizontal-divider-line-height, 0);
       clear: both;
       border: none;
-      border-bottom: 1px solid #888;
-      @apply(--horizontal-divider);
+      border-bottom: 1px solid;
+      opacity: var(--horizontal-divider-opacity, 0.12);
+      border-color: var(--horizontal-divider-color, #000);
     }
   </style>
-
-  <script>
-    Polymer({
-      is: 'horizontal-divider',
-    
-      ready: function () {
-        this._hr = document.createElement('hr');
-        Polymer.dom(this.root).appendChild(this._hr);
-      }
-    
-    });
-    </script>
 </dom-module>
+
+<script>
+  Polymer({
+    is: 'horizontal-divider',
+
+    ready: function () {
+      this._hr = document.createElement('hr');
+      Polymer.dom(this.root).appendChild(this._hr);
+    }
+
+  });
+</script>
